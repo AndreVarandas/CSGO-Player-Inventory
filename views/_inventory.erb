@@ -1,0 +1,34 @@
+<% base_image_url = 'https://steamcommunity.com/economy/image/' %>
+
+<% if message %>
+    <p class="warning-message"><%= message %></p>
+<% end %>
+
+<% if !items.nil? and !items.empty? %>
+    <div class="player">
+        Displaying
+            <span class="highlight">
+                <%= player %>'s <%= items.length %>
+            </span> items.
+    </div>
+<% end %>
+
+<div class="grid">
+    <% items.each do |key, item| %>
+        <%
+            if item['icon_url_large']
+                fullUrl = base_image_url + item['icon_url_large']
+            else
+                fullUrl = base_image_url + item['icon_url']
+            end
+        %>
+        <div class="grid-item">
+            <% stat_track = item['name'].include? 'StatTrak' %>
+            <h3 class="item-name <%= 'stat-trak' if stat_track %>"><%= item['market_name'] %></h3>
+            <img src="<%= fullUrl %>" alt="<%= item['name'] %>"/>
+        </div>
+    <% end %>
+</div>
+
+<a href="/home" class="go-back">Go back</a>
+

@@ -1,0 +1,167 @@
+@import 'reset';
+@import 'variables';
+
+body {
+  background: $primary_dark;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: $main_font;
+  color: $text_color;
+}
+
+.background-image {
+  background-color: #555555;
+  background: url(/images/csgo.jpg);
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+}
+
+.header {
+  align-self: center;
+  padding: $padding;
+  font-size: $big;
+  font-family: $brand_font;
+  a {
+    background: -webkit-linear-gradient(left,#ff4500, #ffcd8f);
+    background: linear-gradient(to right,#ff4500, #ffcd8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.player {
+  align-self: center;
+  font-weight: 100;
+  margin-top: 2 * $margin;
+
+  .highlight {
+    color: orange;
+    font-weight: 400;
+  }
+}
+
+.form-submit-error {
+  margin-top: $margin * 2;
+  color: orange;
+  font-weight: 100;
+}
+
+.grid {
+  margin-top: 50px;
+  border: 1px solid #ff990026;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  .grid-item {
+    padding: $padding;
+    .item-name {
+      font-weight: 100;
+      font-size: $small;
+      text-align: center;
+      margin: $margin 0;
+      &.stat-trak {
+        color: #ff940f;
+      }
+    }
+    img {
+      transition: transform .2s;
+      max-width: 240px;
+      max-height: 150px;
+    }
+    img:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.form-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  .info {
+    align-self: center;
+  }
+}
+
+.form {
+  .form-radios {
+    margin: $margin * 2 0;
+    font-size: $small;
+    font-weight: 100;
+  }
+  .form-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: $padding 5px;
+    font-size: $big;
+    font-family: $brand_font;
+    color: $text_color;
+  }
+  .form-submit {
+    background-color: transparent;
+    border: 1px solid #ffffff69;
+    border-radius: 4px;
+    color: $text_color;
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-size: $big;
+    font-family: "Do Hyeon",sans-serif;
+  }
+}
+
+.footer {
+  align-self: center;
+  padding: $padding;
+  font-size: 0.75em;
+  flex-shrink: 1;
+  a {
+    color: $text_color;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .form {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+// Utils
+::placeholder {
+  font-family: $brand_font;
+}
+
+.warning-message {
+  align-self: center;
+}
+
+.go-back {
+  align-self: center;
+  color: #ff940f;
+  font-size: 1.25em;
+  text-decoration: none;
+  padding: 20px;
+}

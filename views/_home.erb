@@ -1,0 +1,18 @@
+
+<div class="background-image"></div>
+
+<div class="form-holder">
+    <form class="form" method="POST" action="/playerItems">
+        <div class="form-radios">
+            <input class="form-radio" type="radio" name="type" value="id" checked="checked">Use Profile name
+            <input class="form-radio" type="radio" name="type" value="profiles">Use player id
+        </div>
+        <input class="form-input" type="text" name="playerId" placeholder="Insert player Id or Profile name"/>
+        <input class="form-submit" type="submit">
+        <% if message %>
+            <span class="form-submit-error"><%= message %> </span>
+        <% end %>
+    </form>
+</div>
+
+
