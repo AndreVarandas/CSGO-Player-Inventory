@@ -5,7 +5,7 @@ GEM
     ffi (1.9.25)
     multi_json (1.13.1)
     mustermann (1.0.2)
-    rack (2.0.5)
+    rack (2.0.8)
     rack-protection (2.0.2)
       rack
     rb-fsevent (0.10.3)
