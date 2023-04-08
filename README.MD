@@ -10,8 +10,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-- Ruby 2.1.5
-- Bundler
+- Ruby 3.2.2
+- Bundler 2.4.10
 
 ```
 $ gem install bundler
@@ -34,9 +34,9 @@ Can be deployed directly to herokuapp.com. Simply create a new heroku project an
 
 ## Built With
 
-* [Sinatra](http://sinatrarb.com/) - The web framework used
-* [RubyGems](https://rubygems.org/) - Dependency Management
-* [Sass](https://sass-lang.com/) - CSS with superpowers
+- [Sinatra](http://sinatrarb.com/) - The web framework used
+- [RubyGems](https://rubygems.org/) - Dependency Management
+- [Sass](https://sass-lang.com/) - CSS with superpowers
 
 ## Contributing
 
@@ -44,7 +44,7 @@ Please read [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for details on our code of 
 
 ## Authors
 
-* **André Varandas** - *Initial work* - [André Varandas](https://github.com/AndreVarandas).
+- **André Varandas** - _Initial work_ - [André Varandas](https://github.com/AndreVarandas).
 
 ## License
 
