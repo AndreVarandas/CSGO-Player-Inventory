@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-ruby '2.5.1'
+ruby '3.1.2'
 
-gem 'sass'
-gem 'sinatra', '~> 2.2.0'
-gem 'sinatra-contrib', '~> 2.2.0'
+gem 'sassc', '~> 2.4'
+gem 'sinatra', '~> 3.0.5'
+gem 'sinatra-contrib', '~> 3.0.5'
