@@ -4,7 +4,7 @@ workers 0
 threads_count = Integer(ENV['MAX_THREADS'] || 5)
 threads threads_count, threads_count
 
-port        ENV['PORT']      || 3000
+port        ENV['PORT']      || 3001
 environment ENV['RACK_ENV']  || 'development'
 
 app_dir = File.expand_path("../..", __FILE__)
