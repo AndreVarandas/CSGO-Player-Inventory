@@ -1,5 +1,5 @@
-@import 'reset';
-@import 'variables';
+@import "reset";
+@import "variables";
 
 body {
   background: $primary_dark;
@@ -31,11 +31,18 @@ body {
   font-size: $big;
   font-family: $brand_font;
   a {
-    background: -webkit-linear-gradient(left,#ff4500, #ffcd8f);
-    background: linear-gradient(to right,#ff4500, #ffcd8f);
+    background: -webkit-linear-gradient(left, #ff4500, #ffcd8f);
+    background: linear-gradient(to right, #ff4500, #ffcd8f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
+  }
+
+  p {
+    font-size: $small;
+    font-weight: 100;
+    color: $text_color;
+    margin-top: 10px;
   }
 }
 
@@ -81,7 +88,7 @@ body {
       }
     }
     img {
-      transition: transform .2s;
+      transition: transform 0.2s;
       max-width: 240px;
       max-height: 150px;
     }
@@ -125,7 +132,7 @@ body {
     padding: 10px 20px;
     margin-left: 20px;
     font-size: $big;
-    font-family: "Do Hyeon",sans-serif;
+    font-family: "Do Hyeon", sans-serif;
   }
 }
 
